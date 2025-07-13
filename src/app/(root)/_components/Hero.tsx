@@ -1,21 +1,19 @@
-// import Image from "next/image";
-// import StarboyLogo from "~/app/_components/starboy-logo";
+import AnimatedIntro from "./animated-intro";
 
 export default function Hero() {
   return (
-    <div>
-      {/* <div className="flex-center min-h-screen">
-        <StarboyLogo></StarboyLogo>
-      </div> */}
-      <section id="hero" className="relative overflow-hidden">
-        <div className="absolute top-0 left-0 z-10">
-          {/* <Image src="/images/bg.png" alt="background" width={}></Image> */}
-          <img src="/images/bg.png" alt="background"></img>
-        </div>
-        <div className="hero-layout">
+    <section id="hero" className="relative overflow-hidden">
+      <div className="absolute top-0 left-0 z-10">
+        {/* <Image src="/images/bg.png" alt="background" width={}></Image> */}
+        <img src="/images/bg.png" alt="background"></img>
+      </div>
 
-        </div>
-      </section>
-    </div>
+      <div className="hero-layout">
+        {/* Left: Hero Content */}
+          <AnimatedIntro></AnimatedIntro>        
+
+        {/* Right: 3d Model */}
+      </div>
+    </section>
   );
 }
