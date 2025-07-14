@@ -4,11 +4,11 @@ import { Canvas } from "@react-three/fiber";
 import { useMediaQuery } from "react-responsive";
 
 import { Room } from "./Room";
-import HeroLights from "./HeroLights";
+import RoomLights from "./RoomLights";
 import Particles from "../Particles";
 import { Suspense } from "react";
 
-export default function HeroExperience() {
+export default function RoomExperience() {
   const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
   const isTablet = useMediaQuery({ query: "(max-width: 1024px)" });
 
@@ -27,7 +27,7 @@ export default function HeroExperience() {
       />
 
       <Suspense fallback={null}>
-        <HeroLights />
+        <RoomLights />
         <Particles count={100} />
         <group
           scale={isMobile ? 0.7 : 1}

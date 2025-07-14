@@ -1,6 +1,6 @@
 import AnimatedIntro from "./animated-intro";
 import CtaButton from "./cta-button";
-import HeroExperience from "./models/3d-room/HeroExperience";
+import RoomExperience from "./models/3d-room/RoomExperience";
 
 export default function Hero() {
   return (
@@ -26,7 +26,7 @@ export default function Hero() {
         {/* Right: 3d model  */}
         <figure>
           <div className="hero-3d-layout">
-            <HeroExperience></HeroExperience>
+            <RoomExperience></RoomExperience>
           </div>
         </figure>
       </div>
