@@ -5,7 +5,7 @@ import { useMediaQuery } from "react-responsive";
 
 import { Room } from "./Room";
 import RoomLights from "./RoomLights";
-import Particles from "../Particles";
+import Particles from "../../../../components/Particles";
 import { Suspense } from "react";
 
 export default function RoomExperience() {
