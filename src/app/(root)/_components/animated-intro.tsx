@@ -17,7 +17,7 @@ export default function AnimatedIntro() {
       </h1>
       <br />
       <h1>
-        i<span className="text-sky-400">'</span>m
+        i<span className="text-sky-400">&apos;</span>m
         <span className="slide">
           <span className="wrapper">
             {nameList.map((word, i) => (
