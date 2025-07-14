@@ -22,7 +22,8 @@ export default function Hero() {
           </div>
         </header>
 
-        {/* Right: 3d Model */}
+        {/* Right: 3d  */}
+
       </div>
     </section>
   );

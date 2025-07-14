@@ -1,7 +1,19 @@
+"use client";
 // import "~/styles/animated-intro.css";
 import { nameList, doList, emojiList } from "_data/constants";
+// import { useGSAP } from "@gsap/react";
+// import gsap from "gsap";
 
 export default function AnimatedIntro() {
+  // Overengineering ruins things. animations are neat, but don't over do it.
+  // useGSAP(() => {
+  //   gsap.fromTo(
+  //     ".hero-text h1",
+  //     { y: 30, opacity: 0 },
+  //     { y: 0, opacity: 1, stagger: 0.2, duration: 1, ease: "power2.inOut" },
+  //   );
+  // });
+
   return (
     <div className="hero-text">
       <h1>
