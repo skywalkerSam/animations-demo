@@ -1,4 +1,5 @@
 import AnimatedIntro from "./animated-intro";
+import CtaButton from "./cta-button";
 
 export default function Hero() {
   return (
@@ -10,7 +11,16 @@ export default function Hero() {
 
       <div className="hero-layout">
         {/* Left: Hero Content */}
-          <AnimatedIntro></AnimatedIntro>        
+        <header className="flex w-screen flex-col justify-center px-5 md:w-full md:px-20">
+          <div className="flex flex-col gap-7">
+            <AnimatedIntro></AnimatedIntro>
+            <CtaButton
+              text="Explore..."
+              className="h-10 w-45 md:h-12 md:w-60"
+              id={1}
+            ></CtaButton>
+          </div>
+        </header>
 
         {/* Right: 3d Model */}
       </div>
