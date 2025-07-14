@@ -1,6 +1,6 @@
 import AnimatedIntro from "./animated-intro";
 import CtaButton from "./cta-button";
-import RoomExperience from "./models/3d-room/RoomExperience";
+import RoomExperience from "./3d-room/RoomExperience";
 
 export default function Hero() {
   return (
