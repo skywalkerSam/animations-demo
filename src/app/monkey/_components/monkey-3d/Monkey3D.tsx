@@ -12,9 +12,9 @@ export default function Monkey3D() {
   const isTablet = useMediaQuery({ query: "(max-width: 1024px)" });
 
   return (
-    <Canvas camera={{ position: [0, 0, 15], fov: 45 }}>
+    <Canvas camera={{ position: [-10, -10, 10], fov: 30 }}>
       {/* deep blue ambient */}
-      <ambientLight intensity={0.2} color="#1a1a40" />
+      <ambientLight intensity={0.9} color=" #ffffff" /> {/** #1a1a40 */}
       {/* Configure OrbitControls to disable panning and control zoom based on device type */}
       <OrbitControls
         enablePan={false} // Prevents panning of the scene
@@ -29,7 +29,7 @@ export default function Monkey3D() {
         <MonkeyLights />
         
         <group
-          scale={isMobile ? 0.7 : 1}
+          scale={isMobile ? 0.7 : 1.5}
           position={[0, -3.5, 0]}
           rotation={[0, -Math.PI / 4, 0]}
         >
