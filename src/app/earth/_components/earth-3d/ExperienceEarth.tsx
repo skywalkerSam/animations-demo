@@ -5,7 +5,7 @@ import { useMediaQuery } from "react-responsive";
 
 import Sun from "./Sun";
 import { Suspense } from "react";
-import Particles from "~/components/Particles";
+// import Particles from "~/components/Particles";
 // import { Earth } from "./Earth";
 import { EarthHiRes } from "./EarthHiRes";
 
@@ -26,7 +26,7 @@ export default function ExperienceEarth() {
       }}
     >
       <Sun />
-      <Particles></Particles>
+      {/* <Particles></Particles> */}
 
       {/* Configure OrbitControls to disable panning and control zoom based on device type */}
       <OrbitControls
