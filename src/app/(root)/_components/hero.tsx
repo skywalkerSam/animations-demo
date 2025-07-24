@@ -7,7 +7,7 @@ export default function Hero() {
     <section id="hero" className="relative overflow-hidden">
       <div className="absolute top-0 left-0 z-10">
         {/* <Image src="/images/bg.png" alt="background" width={}></Image> */}
-        <img src="/images/bg.png" alt="background"></img>
+        {/* <img src="/images/bg.png" alt="background"></img> */}
       </div>
 
       <div className="hero-layout">
