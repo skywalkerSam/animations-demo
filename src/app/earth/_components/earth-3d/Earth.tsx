@@ -16,7 +16,7 @@ import { SkeletonUtils } from "three-stdlib";
 
 export function Earth(props) {
   const group = React.useRef();
-  const { scene, animations } = useGLTF("/models/planet-earth-transformed.glb");
+  const { scene, animations } = useGLTF("/models/planet-earth.glb");
   const clone = React.useMemo(() => SkeletonUtils.clone(scene), [scene]);
   const { nodes, materials } = useGraph(clone);
   const { actions } = useAnimations(animations, group);
@@ -42,4 +42,4 @@ export function Earth(props) {
   );
 }
 
-useGLTF.preload("/models/planet-earth-transformed.glb");
+useGLTF.preload("/models/planet-earth.glb");

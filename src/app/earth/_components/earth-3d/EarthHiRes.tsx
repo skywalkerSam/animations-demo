@@ -17,7 +17,7 @@ import { SkeletonUtils } from "three-stdlib";
 
 export function EarthHiRes(props) {
   const group = React.useRef();
-  const { scene, animations } = useGLTF("/models/planet-earth-hi-res-transformed.glb");
+  const { scene, animations } = useGLTF("/models/planet-earth-hi-res.glb");
   const clone = React.useMemo(() => SkeletonUtils.clone(scene), [scene]);
   const { nodes, materials } = useGraph(clone);
   const { actions } = useAnimations(animations, group);
@@ -43,4 +43,4 @@ export function EarthHiRes(props) {
   );
 }
 
-useGLTF.preload("/models/planet-earth-hi-res-transformed.glb");
+useGLTF.preload("/models/planet-earth-hi-res.glb");
