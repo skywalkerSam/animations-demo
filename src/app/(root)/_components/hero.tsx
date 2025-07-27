@@ -1,6 +1,7 @@
-import AnimatedIntro from "./animated-intro";
+import AnimatedIntro from "./Animatedintro";
 import CtaButton from "./cta-button";
 import RoomExperience from "./3d-room/RoomExperience";
+import AnimatedCounter from "./AnimatedCounter";
 
 export default function Hero() {
   return (
@@ -30,6 +31,7 @@ export default function Hero() {
           </div>
         </figure>
       </div>
+      <AnimatedCounter></AnimatedCounter>
     </section>
   );
 }
