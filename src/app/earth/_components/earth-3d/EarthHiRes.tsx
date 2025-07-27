@@ -14,13 +14,21 @@ import React from "react";
 import { useGraph } from "@react-three/fiber";
 import { useGLTF, useAnimations } from "@react-three/drei";
 import { SkeletonUtils } from "three-stdlib";
+import type * as THREE from "three";
 
-export function EarthHiRes(props) {
-  const group = React.useRef();
+export function EarthHiRes(props: unknown) {
+  // const group = React.useRef();
+  const group = React.useRef<THREE.Group>(null);
   const { scene, animations } = useGLTF("/models/planet-earth-hi-res.glb");
   const clone = React.useMemo(() => SkeletonUtils.clone(scene), [scene]);
   const { nodes, materials } = useGraph(clone);
   const { actions } = useAnimations(animations, group);
+
+  // Animations if the Earth model has animated features
+  React.useEffect(() => {
+    actions.rotation?.play();
+  }, [actions]);
+
   return (
     <group ref={group} {...props} dispose={null}>
       <group name="Sketchfab_Scene">

@@ -205,13 +205,14 @@ html,
 body {
   margin: 0;
   padding: 0;
-  overflow: hidden; /* Prevents scrollbars */
+  /* Prevents scrollbars */
+  overflow: hidden;
 
-  width: 100dvw;
-  overflow-x: hidden;
+  /* width: 100dvw; */
+  /* overflow-x: hidden; */
   /* background-color: black; */
   /* color: white; */
-  scroll-behavior: smooth;
+  /* scroll-behavior: smooth; */
   /* font-family: "Mona Sans", sans-serif; */
 }
 

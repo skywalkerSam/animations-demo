@@ -19,7 +19,8 @@ export function Earth(props) {
   const { scene, animations } = useGLTF("/models/planet-earth.glb");
   const clone = React.useMemo(() => SkeletonUtils.clone(scene), [scene]);
   const { nodes, materials } = useGraph(clone);
-  const { actions } = useAnimations(animations, group);
+  // const { actions } = useAnimations(animations, group);
+
   return (
     <group ref={group} {...props} dispose={null}>
       <group name="Sketchfab_Scene">

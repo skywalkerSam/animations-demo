@@ -6,18 +6,20 @@ import { useMediaQuery } from "react-responsive";
 import Sun from "./Sun";
 import { Suspense } from "react";
 // import Particles from "~/components/Particles";
-// import { Earth } from "./Earth";
+import { Earth } from "./Earth";
 import { EarthHiRes } from "./EarthHiRes";
 
 export default function ExperienceEarth() {
-  const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
+  const MOBILE_BREAKPOINT = "(max-width: 768px)";
+  const isMobile = useMediaQuery({ query: MOBILE_BREAKPOINT });
   // const isTablet = useMediaQuery({ query: "(max-width: 1024px)" });
 
   return (
     <Canvas
-      camera={{ position: [0, 0, 0], fov: 30 }}
+      camera={{ position: [-30, 90, 25], fov: 15 }}
       style={{
         // position: "fixed",
+        // position: "absolute",
         top: 0,
         left: 0,
         width: "100vw",
