@@ -1,18 +1,18 @@
-export const wordList = [
+export const wordList: {text: string, imgSrc: string}[] = [
   { text: "Projects", imgSrc: "/images/ideas.svg" },
   { text: "Stuff", imgSrc: "/images/ideas.svg" },
 ];
-export const nameList = [
+export const nameList: {text: string}[] = [
   { text: "Sam"},
   { text: "Skywalker"},
 ];
 
-export const doList = [
+export const doList: {text: string}[] = [
   { text: "Write"},
   { text: "Build"},
 ];
 
-export const emojiList = [
+export const emojiList: {text: string}[] = [
   { text: "👋"},
   { text: "✌️"},
 ];
