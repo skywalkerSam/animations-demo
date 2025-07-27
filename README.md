@@ -12,11 +12,11 @@
 
 [animations-demo.skywalkerSam.dev](https://animations-demo.skywalkersam.dev/)
 
-[animations-demo-delta.vercel.app/](https://animations-demo-delta.vercel.app)
+[animations-demo-delta.vercel.app](https://animations-demo-delta.vercel.app)
 
 ## Sources
 
-- GSAP + Three.js intro - [YouTube](https://www.youtube.com/watch?v=E-fdPfRxkzQ)
+- [GSAP](https://gsap.com/) + [Three.js](https://threejs.org/) intro - [YouTube](https://www.youtube.com/watch?v=E-fdPfRxkzQ)
 
 &nbsp;
 
